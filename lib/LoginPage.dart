@@ -44,7 +44,9 @@ class LoginPage extends StatelessWidget {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(6),
         ),
-        onPressed: () {},
+        onPressed: () {
+          Navigator.of(context).pushNamed(homePageTag);
+        },
         padding: EdgeInsets.all(12),
         color: appGreyColor,
         child: Text(
